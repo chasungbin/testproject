@@ -6,6 +6,7 @@ const app = express();
 const app2 = express();
 const sport = 443
 const port = 3000
+const cors = require('cors')
 
 const log = require('./src/middlewars/log');
 
