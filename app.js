@@ -24,9 +24,9 @@ app2.use((req, res, next)=>{
 
 //SSL인증서
 const option = {
-        ca: fs.readFileSync('/../../etc/letsencrypt/live/sdfoaj.shop/fullchain.pem'),
-        key: fs.readFileSync('/../../etc/letsencrypt/live/sdfoaj.shop/privkey.pem'),
-        cert: fs.readFileSync('/../../etc/letsencrypt/live/sdfoaj.shop/cert.pem'),
+        ca: fs.readFileSync('/etc/letsencrypt/live/sdfoaj.shop/fullchain.pem'),
+        key: fs.readFileSync('/etc/letsencrypt/live/sdfoaj.shop/privkey.pem'),
+        cert: fs.readFileSync('/etc/letsencrypt/live/sdfoaj.shop/cert.pem'),
 }
 
 
