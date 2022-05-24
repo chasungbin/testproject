@@ -12,7 +12,7 @@ const log = require('../새 폴더/src/middlewars/log');
 app.use(cors());
 app.use(express.json());
 app.use(log)
-/* //http유저 https 로 접속 다이렉션
+//http유저 https 로 접속 다이렉션
 app2.use((req, res, next)=>{
     if(req.secure){
         next();
@@ -26,7 +26,7 @@ const option = {
         ca: fs.readFileSync('/etc/letsencrypt/live/sdfoaj.shop/fullchain.pem'),
         key: fs.readFileSync('/etc/letsencrypt/live/sdfoaj.shop/privkey.pem'),
         cert: fs.readFileSync('/etc/letsencrypt/live/sdfoaj.shop/cert.pem'),
-} */
+}
 
 
 
@@ -34,6 +34,6 @@ http.createServer(app).listen(port, () =>{
     console.log(`${port}server start`)
 })
 
-/* https.createServer(option,app).listen(sport, () =>{
+https.createServer(option,app).listen(sport, () =>{
     console.log('서버가 작동!!!!')
-}) */
+})
