@@ -7,6 +7,11 @@ const app2 = express();
 const sport = 443
 const port = 3000
 
+const log = require('../새 폴더/src/middlewars/log');
+
+app.use(cors());
+app.use(express.json());
+app.use(log)
 /* //http유저 https 로 접속 다이렉션
 app2.use((req, res, next)=>{
     if(req.secure){
