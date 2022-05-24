@@ -7,7 +7,7 @@ const app2 = express();
 const sport = 443
 const port = 3000
 
-const log = require('../새 폴더/src/middlewars/log');
+const log = require('./src/middlewars/log');
 
 app.use(cors());
 app.use(express.json());
